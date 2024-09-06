@@ -15,6 +15,7 @@ const UserSchema = new Schema(
       { type: mongoose.Schema.Types.ObjectId, ref: "Notification" },
     ],
     role: { type: String, enum: ["User", "Admin"], default: "User" },
+    image_public_id: { type: String, default: "" },
   },
   { timestamps: true }
 );
